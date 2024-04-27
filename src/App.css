@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+.app {
+    height: 100vh;
+    display: flex;
+    font-family: "Schibsted Grotesk", sans-serif;
+    background-color: #eee;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    height: 300px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container input,
+.desc-container input {
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin: 4px 0;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    & label {
+        font-size: 2.5rem;
+        display: flex;
+        color: #333;
+        align-items: baseline;
+        gap: 8px;
+
+        & p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.file-upload {
+    display: none;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 8px;
+}
+
+.top-card {
+    height: 50%;
+}
+
+.bottom-card {
+    height: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-title {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.card-description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.card-image {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+    .app {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        min-height: 100vh;
+        height: auto;
+        padding: 2rem 0;
+        justify-content: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
